@@ -77,6 +77,25 @@
     background-repeat: no-repeat; 
     background-position: center; 
   }
+  /* sites potal starts here ******************************************************************** */
+  .site-container{
+    max-width: 1110px;
+    margin: 33px auto;
+    border: 1px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(135.00deg, rgba(192, 204, 218, 0.1) 0%,rgba(192, 204, 218, 0.6) 50.378%,rgba(192, 204, 218, 0.1) 100%);
+    border-left: none;
+    border-right: none;
+  }
+  .site-container div ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+  }
+  .site-container div ul li{
+    margin: 30px;
+  }
   
   
   
@@ -91,6 +110,9 @@
     .introduction{
         display: block;
         text-align: center;
+    }
+    .site-container{
+      border: none;
     }
     
   }

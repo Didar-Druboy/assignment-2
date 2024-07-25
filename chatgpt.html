@@ -1,60 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SVG Background Example</title>
-  <style>
-    .svg-background {
-      width: 400px;
-      height: 400px;
-      background-image: url('images/Circle-design.svg');
-      background-size: cover;
-      
-    }
-    .introduction{
-    max-width: 1200px;
-    /* height: 30rem; */
-    margin: 0 auto;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  .flex-container {
     display: flex;
-    gap: 40px;
-  } 
-  .introduction h1{
-    font-size: 3rem;
-    font-weight: 700;
+    flex-wrap: wrap;
+    gap: 10px;
   }
-  .introduction p{
-    font-size: 1rem;
-    font-weight: 600;
+
+  .flex-item {
+    flex: 1 1 calc(50% - 10px); /* Adjust for the gap */
+    background-color: #4CAF50;
+    color: white;
+    margin: 5px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
   }
-  #svg-background {
-    width: 400px;
-    height: 400px;
-    background-image: url('images/Circle-design.svg');
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center; 
-  }
-  </style>
+</style>
 </head>
 <body>
-  <div class="svg-background">
-    <!-- <h1>Welcome to My Website</h1>
-    <p>This is an example of a div with an SVG background image.</p> -->
+  <div class="flex-container">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+    <div class="flex-item">4</div>
   </div>
-
-
-  <section class="introduction">
-    <div class="introduction-heading">
-        <h1>Start your Journey as Influencer</h1>
-        <p>Hey! Is your drea to be a social influencer? Is your motto to help people? If that, we are here to help you...!</p>
-        <button>Prebook now &#8594;</button>
-    </div>
-    <div id="svg-background">
-        <!-- <img src="images/Circle-design.svg" alt="Background" class="background-image"> -->
-        <img src="images/main-camera.png" alt="Foreground" class="foreground-image">
-    </div>
-
- </section>
 </body>
 </html>
